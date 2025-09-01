@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teacher's Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #dbe8ff);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 30px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 600px;
+      animation: fadeIn 1.5s ease-in-out;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+      animation: slideUp 1.2s ease-in-out;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #34495e;
+      animation: slideUp 1.5s ease-in-out;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 10px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .thankyou {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #1a73e8;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(40px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    /* Floating math symbols */
+    .symbol {
+      position: absolute;
+      font-size: 2rem;
+      color: rgba(26, 115, 232, 0.15);
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating math symbols -->
+  <div class="symbol" style="top:10%; left:15%; animation-delay:0s;">∑</div>
+  <div class="symbol" style="top:20%; right:20%; animation-delay:1s;">π</div>
+  <div class="symbol" style="bottom:15%; left:25%; animation-delay:2s;">√</div>
+  <div class="symbol" style="bottom:20%; right:15%; animation-delay:3s;">∞</div>
+  <div class="symbol" style="top:40%; left:5%; animation-delay:1.5s;">∫</div>
+
+  <div class="container">
+    <h1>Happy Teacher's Day</h1>
+    <h2>To our respected Sulabh Sir</h2>
+    <p>Thank you for making the world of mathematics not just numbers and formulas, but a journey of curiosity, logic, and inspiration.</p>
+    <p>Your guidance has shaped our understanding and given us confidence to solve not only equations, but also challenges in life.</p>
+    <div class="thankyou">Thank you so much, Sir!</div>
+  </div>
+</body>
+</html>
